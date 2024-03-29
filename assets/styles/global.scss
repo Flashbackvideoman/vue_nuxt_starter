@@ -1,0 +1,48 @@
+// Scss Document
+
+// Global Variables
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Scss Document
+
+// Global Variables
+
+$black: #000000;
+$gray-90: lighten($black, 10%);
+$gray-80: lighten($black, 20%);
+$gray-70: lighten($black, 30%);
+$gray-60: lighten($black, 40%);
+$gray-50: lighten($black, 50%);
+$gray-40: lighten($black, 60%);
+$gray-30: lighten($black, 70%);
+$gray-20: lighten($black, 80%);
+$gray-10: lighten($black, 90%);
+$white: #ffffff;
+
+$bkg-color: #000017;
+$bkgGrad1: #050c13;
+$bkgGrad2: #294057;
+$mainFontColor: #fff;
+$staticText: #fff9a7;
+$activeColor: #90caf9;
+$activeTextColor: #13212e;
+$inactiveColor: #54718e;
+
+$light: #d9d9d9;
+
+$dark: #172635;
+$dark-a90: rgba($dark, 0.9);
+$dark-darker: darken($dark, 10%);
+$dark-light: lighten($dark, 5%);
+$dark-lighter: lighten($dark, 10%);
+
+$primary-blue: #4dacff;
+$secondary: #b3b3b3;
+$standby: #2dccff;
+$success: #56f000;
+$caution: #fce83a;
+$serious: #ffb302;
+$critical: #ff3838;
+
+// Typography & Icons
