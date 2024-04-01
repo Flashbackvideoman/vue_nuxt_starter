@@ -76,15 +76,15 @@
             Home
           </div>
         </NuxtLink>
-        <NuxtLink id="esaaMain" class="navitem" to="/">
+        <NuxtLink id="pgmMain" class="navitem" to="/">
           <div class="navitem-icon">
-            <!-- <img src="@/assets/styles/img/icon_esaa.svg" alt="ESAA icon" width="20" height="21" /> -->
+           <em class="pi pi-question-circle" />
             ESAA
           </div>
         </NuxtLink>
         <NuxtLink id="productReports" class="navitem" to="/">
           <div class="navitem-icon">
-            <!-- <img src="@/assets/styles/img/icon_product_reports.svg" alt="Product reports icon" width="20" height="21" /> -->
+            <em class="pi pi-question-circle" />
             Product Reports
           </div>
         </NuxtLink>
@@ -159,7 +159,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 // Scss Document
 
 @import "@/assets/styles/styles.scss";
