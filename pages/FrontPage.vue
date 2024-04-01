@@ -1,8 +1,24 @@
 <template>
+  <AppLeftNav />
   <div id="FrontPage" class="full-height">
     <div class="titleText">ASRCFederal Water Model Information Front Page</div>
   </div>
 </template>
+<script lang="ts">
+import "@/components/AppLeftNav.vue"
+export default {
+  name: "FrontPage",
+  data: () => ({
+    inputType: "Name",
+    displayCesium: true,
+  }),
+  methods: {
+    submitReport() {
+      alert("Report submitted");
+    },
+  },
+};
+</script>
 <style lang="scss">
 html,
 body {
