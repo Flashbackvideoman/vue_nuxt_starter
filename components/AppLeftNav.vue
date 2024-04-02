@@ -8,11 +8,13 @@
         {
           isFullSize = !isFullSize;
         }
-      ">
+      "
+    >
       <nav aria-label="Navigation menu">
         <div class="navitem">
           <div class="navitem-icon">
-            <em class="pi pi-user" />
+            <!--<em class="pi pi-user" />-->
+            <img src="@/assets/styles/img/power.png" alt="Page1" width="35" />
           </div>
           User Name
           <div class="navitem-icon" />
@@ -21,25 +23,25 @@
         <hr />
         <NuxtLink id="home" class="navitem" to="/">
           <div class="navitem-icon">
-            <em class="pi pi-th-large" />
+            <img src="@/assets/styles/img/home.png" alt="Page1" width="35" />
           </div>
           Home
         </NuxtLink>
         <NuxtLink id="Page1" class="navitem" to="/">
           <div class="navitem-icon">
-            <img src="@/assets/styles/img/asrc.png" alt="Page1" width="35" />
+            <img src="@/assets/styles/img/meter.png" alt="Page1" width="35" />
           </div>
           Page1
         </NuxtLink>
         <NuxtLink id="Page2" class="navitem" to="/">
           <div class="navitem-icon">
-            <img src="@/assets/styles/img/asrc.png" alt="Page2" width="35" />
+            <img src="@/assets/styles/img/globe.png" alt="Page2" width="35" />
           </div>
           Page2
         </NuxtLink>
         <NuxtLink id="Page3" class="navitem" to="/">
           <div class="navitem-icon">
-            <img src="@/assets/styles/img/asrc.png" alt="Page3" width="35" />
+            <img src="@/assets/styles/img/rain.png" alt="Page3" width="35" />
           </div>
           Page3
         </NuxtLink>
@@ -49,57 +51,6 @@
             <em class="pi pi-question-circle" />
           </div>
           Help
-        </NuxtLink>
-      </nav>
-    </div>
-
-    <!-- Mobile Drop Down Menu -->
-    <div id="mobileMenuLink" @click="openMobileMenu">
-      <em class="pi pi-list" style="font-size: 1em" />
-    </div>
-    <div id="slide-down" name="slide-down">
-      <nav id="slide-down-nav" ref="slideDownNav" aria-label="Mobile Navigation menu">
-        <br />
-        <div class="navitem">
-          <div class="navitem-icon">
-            <em class="bi pi pi-user" />&nbsp;Welcome
-            <br />
-            Sally Operator
-          </div>
-          <div class="navitem-icon" />
-          <a href="#">&nbsp;Log off</a>
-        </div>
-        <hr />
-        <NuxtLink id="home" class="navitem" to="/">
-          <div class="navitem-icon">
-            <em class="pi pi-th-large" />
-            Home
-          </div>
-        </NuxtLink>
-        <NuxtLink id="pgmMain" class="navitem" to="/">
-          <div class="navitem-icon">
-           <em class="pi pi-question-circle" />
-            ESAA
-          </div>
-        </NuxtLink>
-        <NuxtLink id="productReports" class="navitem" to="/">
-          <div class="navitem-icon">
-            <em class="pi pi-question-circle" />
-            Product Reports
-          </div>
-        </NuxtLink>
-        <NuxtLink id="dataIngestionMonitor" class="navitem" to="/">
-          <div class="navitem-icon">
-            <!-- <img src="@/assets/styles/img/data-ingestion-icon.svg" alt="Data ingestion icon" width="20" height="21" /> -->
-            Data Ingestion
-          </div>
-        </NuxtLink>
-        <hr />
-        <NuxtLink id="help" lass="navitem" to="/" target="_blank">
-          <div class="navitem-icon">
-            <em class="pi pi-question-circle" />
-            Help
-          </div>
         </NuxtLink>
       </nav>
     </div>
@@ -160,8 +111,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// Scss Document
-
 @import "@/assets/styles/styles.scss";
 
 body {
@@ -184,7 +133,7 @@ a:link {
   padding-bottom: 1px;
 }
 
-// visited link 
+// visited link
 a:visited {
   color: $light;
   text-decoration: none;
@@ -192,7 +141,7 @@ a:visited {
   padding-bottom: 1px;
 }
 
-// mouse over link 
+// mouse over link
 a:hover {
   color: $white;
   text-decoration: none;
@@ -200,7 +149,7 @@ a:hover {
   padding-bottom: 1px;
 }
 
- //selected link 
+//selected link
 a:active {
   color: $white;
   text-decoration: none;
@@ -285,56 +234,4 @@ nav {
   font-size: 0.9em;
   margin-left: 59px;
 }
-
-#slide-down .navitem .navitem-icon {
-  padding-bottom: 10px;
-}
-
-#mobileMenuLink {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50px;
-  text-align: center;
-  background-color: $dark;
-  padding: 5px 0 0 5px;
-  border-radius: 0 0 10px 10px;
-}
-
-#slide-down {
-  overflow: hidden;
-  z-index: 1000;
-  width: 180px;
-  position: fixed;
-  top: 25px;
-  padding-left: 10px;
-  padding-top: 0px;
-  background-color: $dark;
-  background-image: linear-gradient($background-gradient-start, $background-gradient-end);
-  left: 0;
-  box-shadow: 1px 0px 3px $black;
-}
-
-#slide-down nav {
-  height: 0px;
-  padding-bottom: 0;
-}
-
-#slide-down hr {
-  background: $gray-50;
-  margin: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-  #slide-out {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #mobileMenuLink {
-    display: none;
-  }
-}
-
 </style>

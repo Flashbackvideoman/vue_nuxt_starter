@@ -6,5 +6,9 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "tailwindCSS.suggestions": true  
+  "tailwindCSS.suggestions": true,
+  "workbench.colorCustomizations": {
+    "editor.linkedEditingBackground": "#ff0000",
+    "editor.wordHighlightBackground": "#00ff37"
+  }
 }
