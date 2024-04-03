@@ -2,10 +2,10 @@
   <AppLeftNav />
   <div id="FrontPage" class="full-height">
     <div class="titleText">Nextgen Water Prediction</div>
-    <div id="SampleChart">
+    <div id="sampleChart">
       Sample Chart:
       <div>
-        <SampleChart />
+        <sampleChart />
       </div>
     </div>
   </div>
@@ -26,16 +26,19 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "@/assets/styles/styles.scss";
 html,
 body {
   overflow: hidden;
   height: 100%;
 }
 
-#SampleChart {
+#sampleChart {
   width: 50%;
   margin: 0 auto;
   margin-top: 100px;
+  background-color: white;
+  color: black;
 }
 
 .full-height {
@@ -43,6 +46,7 @@ body {
 }
 
 .titleText {
+  color: white;
   padding: 50px 0 0 100px;
   font-size: 40px;
 }

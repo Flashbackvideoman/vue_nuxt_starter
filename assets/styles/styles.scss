@@ -4,8 +4,8 @@
 @import "primeicons/primeicons.css";
 
 html {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(130deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  // background: rgb(12, 82, 116);
+  background: linear-gradient(90deg, $ngwcp_primary1 0%, $ngwcp_primary2 100%);
 }
 
 body {
@@ -72,7 +72,6 @@ label {
 .default-style {
   min-width: 100%;
   min-height: 100vh;
-  // background-image: linear-gradient($background-gradient-start, $background-gradient-end);
 }
 
 .flex-display {

@@ -1,23 +1,20 @@
 // Scss Document
 
 // Global Variables
+$ngwcp_primary1: #105d8e;
+$ngwcp_primary2: #5bb6c1;
+$ngwcp_primary3: #0c5274;
 
-// Scss Document
-$color_TODO_1: white;
-$color_TODO_2: rgba(255, 255, 255, 0.6);
-$color_TODO_3: rgba(153, 214, 255, 1);
+$ngwcp_secondary1: #000000;
+$ngwcp_secondary2: #c5d4c8;
+$ngwcp_secondary3: #86afb5;
+
+$ngwcp_neutral1: #333333;
+$ngwcp_neutral2: #ffffff;
+
 $color-transparent: rgba(0, 0, 0, 0);
-$color-primevue-blue: #64b5f6;
-$font-family_TODO_1: "Roboto", Arial, Helvetica, sans-serif;
-$background-color_TODO_1: black;
-$background-color_TODO_2: rgb(14, 25, 39);
-$background-color_TODO_3: blue;
-$background-gradient-start: #050c13;
-$background-gradient-end: #294057;
-$underlined-border: transparent transparent #030303 transparent;
 
 // Global Variables
-
 $black: #000000;
 $gray-90: lighten($black, 10%);
 $gray-80: lighten($black, 20%);
@@ -30,29 +27,13 @@ $gray-20: lighten($black, 80%);
 $gray-10: lighten($black, 90%);
 $white: #ffffff;
 
-$bkg-color: #000017;
-$bkgGrad1: #050c13;
-$bkgGrad2: #294057;
 $mainFontColor: #fff;
 $staticText: #fff9a7;
 $activeColor: #90caf9;
 $activeTextColor: #13212e;
 $inactiveColor: #54718e;
 
-$light: #d9d9d9;
-
-$dark: #172635;
-$dark-a90: rgba($dark, 0.9);
-$dark-darker: darken($dark, 10%);
-$dark-light: lighten($dark, 5%);
-$dark-lighter: lighten($dark, 10%);
-
-$primary-blue: #4dacff;
-$secondary: #b3b3b3;
-$standby: #2dccff;
-$success: #56f000;
-$caution: #fce83a;
-$serious: #ffb302;
-$critical: #ff3838;
+$light: $ngwcp_secondary2;
+$dark: $ngwcp_secondary1;
 
 // Typography & Icons
