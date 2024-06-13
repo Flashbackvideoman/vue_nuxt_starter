@@ -15,8 +15,11 @@
     "test:local": "vitest dev --coverage"
   },
   "dependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
     "chart.js": "^4.4.2",
+    "leaflet": "^1.9.4",
     "nuxt": "^3.11.1",
+    "ol": "^9.2.4",
     "primeicons": "^7.0.0",
     "vue": "^3.4.21",
     "vue-chartjs": "^5.3.0",

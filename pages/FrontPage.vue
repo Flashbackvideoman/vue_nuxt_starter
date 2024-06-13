@@ -2,16 +2,16 @@
   <AppLeftNav />
   <div id="FrontPage" class="full-height">
     <div class="titleText">Nextgen Water Prediction</div>
-    <div id="sampleChart">
-      Sample Chart:
+    <div id="LeafMap">
       <div>
-        <sampleChart />
+         <leafletMap />
       </div>
     </div>
   </div>
 </template>
 <script lang="ts">
 import "@/components/AppLeftNav.vue";
+import LeafletMap from "../components/LeafletMap.vue";
 export default {
   name: "FrontPage",
   data: () => ({
@@ -33,7 +33,7 @@ body {
   height: 100%;
 }
 
-#sampleChart {
+#LeafMap {
   width: 50%;
   margin: 0 auto;
   margin-top: 100px;
